@@ -1,0 +1,18 @@
+.box {
+  width: 140px;
+  height: 60px;
+  display: grid;
+  place-items: center;
+  margin: 10px 0;
+}
+
+.one {
+  border: 1px solid red;
+}
+
+.two {
+  border: 5px dashed green;
+}
+.three {
+  border: 13px dotted blue;
+}

@@ -1,0 +1,22 @@
+/* Estilos base */
+.wrap {
+  background: #f0fff4;
+  border: 1px solid #9ae6b4;
+  min-height: 120px;
+  margin: 16px; /* margen por defecto (móvil) */
+}
+
+/* Tablet (mínimo 600px de ancho) */
+@media (min-width: 600px) {
+  .wrap {
+    margin: 32px; /* márgenes más amplios en tablet */
+  }
+}
+
+/* Escritorio (mínimo 1024px de ancho) */
+@media (min-width: 1024px) {
+  .wrap {
+    margin: 64px auto; /* centrado con márgenes mayores */
+    max-width: 800px;
+  }
+}

@@ -1,0 +1,14 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  background: #f0f0f0;
+  padding: 16px;
+}
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  height: 80px;
+  display: grid;
+  place-items: center;
+}

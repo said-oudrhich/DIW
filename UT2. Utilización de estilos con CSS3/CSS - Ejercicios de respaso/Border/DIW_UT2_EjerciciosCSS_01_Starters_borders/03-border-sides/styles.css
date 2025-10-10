@@ -1,0 +1,17 @@
+.striped,
+.callout {
+  padding: 16px;
+  margin: 12px 0;
+  background: #fff;
+}
+
+.striped {
+  border: 4px dashed #666;
+  border-left: none;
+  border-right: none;
+}
+.callout {
+  border: 4px solid #666;
+  border-top: none;
+  border-bottom: none;
+}
