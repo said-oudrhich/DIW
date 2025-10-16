@@ -1,0 +1,6 @@
+/* Reglas:
+   - .card a (descendant): azul
+   - .card > a (child): verde
+   - .card h3 ~ p (general sibling): gris
+*/
+

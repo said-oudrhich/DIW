@@ -1,0 +1,2 @@
+/* Objetivo: a[href^="http"]::after -> content:"↗"; margin-left:4px; font-size:.9em; color:#6b7280; */
+a[href^="http"]::after {  }

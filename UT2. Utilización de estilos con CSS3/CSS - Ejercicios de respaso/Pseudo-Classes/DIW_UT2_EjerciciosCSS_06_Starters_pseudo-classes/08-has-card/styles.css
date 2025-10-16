@@ -1,0 +1,6 @@
+.card { border:1px solid #e5e7eb; padding:12px; margin:8px 0; }
+/* Objetivo:
+   - Resaltar .card que :has(img) con un borde azul
+   - Resaltar .form que :has(input:invalid) con un borde rojo (cuando el email no sea válido)
+*/
+

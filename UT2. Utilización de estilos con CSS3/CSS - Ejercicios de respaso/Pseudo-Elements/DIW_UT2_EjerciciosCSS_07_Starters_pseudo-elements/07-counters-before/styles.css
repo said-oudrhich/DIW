@@ -1,0 +1,6 @@
+/* Objetivo:
+   - Resetea un contador en .seccion (counter-reset: temas)
+   - Incrementa en cada h3 (counter-increment: temas)
+   - h3::before muestra el número: "1. ", "2. ", ...
+*/
+

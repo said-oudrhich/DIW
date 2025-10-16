@@ -1,0 +1,7 @@
+.box {
+  background:#e0f2fe; 
+}
+.content {
+  background:#fff; /* representa el área de contenido */
+}
+.nota { font-family: system-ui, sans-serif; }

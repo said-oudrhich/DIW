@@ -1,0 +1,7 @@
+/* Objetivos:
+   - Resaltar todos los p dentro de .content -> color #111827
+   - Borde solo a h2 hijos directos de .content -> 2px solid #93c5fd
+   - Cambiar color del primer p tras cualquier h2 -> #16a34a
+   - Poner cursiva a todos los p que siguen a un h2 -> color #6b7280 + italic
+*/
+
