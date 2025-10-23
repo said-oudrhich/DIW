@@ -1,7 +1,13 @@
 .box {
-  background:#e0f2fe; 
+  background: #e0f2fe;
 }
 .content {
-  background:#fff; /* representa el área de contenido */
+  background: #fff;
+  width: 200px;
+  padding: 20px;
+  border: 5px solid #000;
+  margin: 15px;
 }
-.nota { font-family: system-ui, sans-serif; }
+.nota {
+  font-family: system-ui, sans-serif;
+}

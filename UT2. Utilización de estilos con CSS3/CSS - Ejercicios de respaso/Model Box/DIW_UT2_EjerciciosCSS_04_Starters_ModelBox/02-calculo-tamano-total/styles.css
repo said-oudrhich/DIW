@@ -1,7 +1,6 @@
 .box {
-  width:200px;
-  background:#f0f9ff;
-
+  width: 200px;
+  background: #f0f9ff;
 }
 /* TODO: Calcula el ancho total visible:
    total = width + (padding-left + padding-right) + (border-left + border-right) + (margin-left + margin-right)
