@@ -1,13 +1,22 @@
-.grid {
-  display:flex;
-  flex-wrap:wrap;
+/*jercicio 8 - Layout con varias cajas (grid + box model) 
  
+▪ Objetivo: Construir un layout con tarjetas equilibradas usando el box model. 
+▪ Enunciado: Grid flex con márgenes compensados, padding y border; usa box-sizing:border-
+box. 
+ */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
 }
 .card {
-
   border-radius: 8px;
-
-  width: calc(33.333% - 16px); /* calcula pensando en márgenes laterales de 8px */
+  border: 2px solid #ccc;
+  width: calc(
+    33.333% - 16px
+  ); /* calcula pensando en márgenes laterales de 8px */
   min-height: 100px;
-  background:#fff;
+  background: #fff;
+  margin: 8px;
+  box-sizing: border-box;
+  padding: 8px;
 }

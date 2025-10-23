@@ -1,4 +1,21 @@
-.p1 { margin-bottom:30px; background:#eef; }
-.p2 { margin-top:40px; background:#efe; }
+/*Ejercicio 7 - Colapso de márgenes verticales 
+ 
+▪ Objetivo: Entender colapso de márgenes y evitarlo. 
+▪ Dos párrafos con márgenes verticales; evita el colapso con flow-root u overflow.*/
+.p1 {
+  margin-bottom: 30px;
+  background: #eef;
+}
+.p2 {
+  margin-top: 40px;
+  background: #efe;
+}
 
-   /*Sugerencia: crea un nuevo contexto de formato en .p2 (p.ej. display: flow-root) o evita colapso con overflow:auto en un contenedor. */
+/*Sugerencia: crea un nuevo contexto de formato en .p2 (p.ej. display: flow-root) o evita colapso con overflow:auto en un contenedor. */
+
+.p1 {
+  display: flow-root;
+}
+.p2 {
+  overflow: auto;
+}

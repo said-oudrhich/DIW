@@ -1,5 +1,17 @@
+/*Ejercicio 6 - Box model en botones (estabilidad) 
+ 
+▪ Objetivo: Asegurar estabilidad visual del botón con hover. 
+▪ Enunciado: Usa border transparente inicial y cambia solo el color en :hover.*/
 .btn {
-  background:#111827;
-  color:#fff;
+  background: #111827;
+  color: #fff;
+  border: 2px solid transparent;
+  padding: 12px 24px;
+  border-radius: 4px;
+  transition: background 0.3s, color 0.3s;
+}
 
+.btn:hover {
+  background: #2563eb;
+  color: #fff;
 }

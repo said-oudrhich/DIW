@@ -1,3 +1,26 @@
-.row { display:flex; gap:24px; flex-wrap:wrap; }
-.demo { width:300px; background:#ecfeff; border:10px solid #22d3ee; }
+/*
+Ejercicio 3 - Usar box-sizing: border-box 
+ 
+▪ Objetivo: Controlar el tamaño final con box-sizing: border-box. 
+▪ Enunciado: Compara content-box vs border-box con mismos width/padding/border.
+*/
 
+.row {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.demo {
+  width: 300px;
+  background: #ecfeff;
+  border: 10px solid #22d3ee;
+}
+
+.demo.content-box {
+  box-sizing: content-box;
+  padding: 20px;
+}
+.demo.border-box {
+  box-sizing: border-box;
+  padding: 20px;
+}
