@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Práctica 2 - Audio y Vídeo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style32.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Práctica 2 · Audio y Vídeo HTML5</h1>
+    </header>
+
+    <main class="layout">
+      <section class="media-card">
+        <h2>Audio de muestra (20-30s)</h2>
+        <audio controls>
+          <source src="media/audio-recortado.ogg" type="audio/ogg" />
+          Tu navegador no soporta audio HTML5.
+        </audio>
+        <div class="note">
+          <h3>Edición de Audio (Audacity)</h3>
+          <ul>
+            <li>
+              El clip original MP3 (1m 38s, 3.2 MB) se recortó a 20 segundos.
+            </li>
+            <li>
+              Se aplicó la **normalización** de volumen para optimizar la
+              sonoridad.
+            </li>
+          </ul>
+
+          <h3>Comparativa de Exportación</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Formato</th>
+                <th>Peso Final</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>MP3</td>
+                <td>513.0 kB</td>
+              </tr>
+              <tr>
+                <td>OGG</td>
+                <td>454.6 kB</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            El formato **OGG** resultó ser el más eficiente, con un menor peso.
+            La inclusión de ambos garantiza la máxima compatibilidad en todos
+            los navegadores.
+          </p>
+        </div>
+      </section>
+
+      <section class="media-card">
+        <h2>Vídeo de muestra (Editado y 720p)</h2>
+        <video controls>
+          <source src="media/video-recortado.webm" type="video/webm" />
+          Tu navegador no soporta vídeo HTML5.
+        </video>
+        <div class="note">
+          <h3>Edición de Vídeo (Shotcut)</h3>
+          <ul>
+            <li>
+              El vídeo original (51s, 1080p, 23.5 MB) se recortó a 30 segundos.
+            </li>
+            <li>
+              Se añadió un **título inicial** y un **efecto de fundido** (fade).
+            </li>
+            <li>La exportación se realizó a **720p** (1280x720).</li>
+          </ul>
+
+          <h3>Comparativa de Exportación</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Formato</th>
+                <th>Peso Final</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>MP4 (H.264)</td>
+                <td>8.2 MB</td>
+              </tr>
+              <tr>
+                <td>WebM (VP9)</td>
+                <td>8.4 MB</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            La reducción de resolución y el recorte resultaron en una drástica
+            optimización de peso. Se incluyen ambos formatos por compatibilidad.
+          </p>
+        </div>
+      </section>
+
+      <section class="media-card">
+        <h2>Grabación: Proceso de Edición de Audio (Apartado 1)</h2>
+        <video controls>
+          <source src="media/grabacion-audio.webm" type="video/webm" />
+          Tu navegador no soporta vídeo HTML5.
+        </video>
+        <p class="note">
+          Este vídeo muestra los pasos de la edición de audio en Audacity:
+          importación, recorte y normalización.
+        </p>
+      </section>
+
+      <section class="media-card">
+        <h2>Grabación: Proceso de Edición de Vídeo (Apartado 2)</h2>
+        <video controls>
+          <source src="media/grabacion-video.webm" type="video/webm" />
+          Tu navegador no soporta vídeo HTML5.
+        </video>
+        <p class="note">
+          Este vídeo muestra el proceso de edición de vídeo en Shotcut: recorte,
+          aplicación de título y fundido, y exportación a diferentes formatos y
+          resoluciones.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

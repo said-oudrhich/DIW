@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Práctica 1 - Banco de recursos e imágenes para la Web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style31.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="logo">
+        <img src="img/logo.svg" alt="logo said" />
+        <h1>Galería RA3</h1>
+      </div>
+      <p class="subtitle">Práctica 1: Imágenes optimizadas para la web</p>
+    </header>
+
+    <main>
+      <section class="intro">
+        <h2>Introducción</h2>
+        <p>
+          Esta práctica se centra en el manejo de imágenes optimizadas, la
+          comprensión de licencias de recursos multimedia y la creación de una
+          galería responsive utilizando HTML5 y CSS3. Se revisan distintos
+          formatos de imagen y se optimizan recursos para mejorar la carga y
+          rendimiento web.
+        </p>
+      </section>
+
+      <!-- 1. INVESTIGACIÓN DE LICENCIAS -->
+      <section id="licencias">
+        <h2>1. Investigación de Licencias</h2>
+
+        <h3>¿Qué es una licencia?</h3>
+        <p>
+          Una licencia es un permiso legal que otorga el autor de una obra para
+          indicar cómo otros pueden usar, modificar y distribuir su contenido.
+          En el ámbito de recursos multimedia para la web, define los derechos y
+          restricciones sobre imágenes, audio, vídeo y otros materiales
+          digitales.
+        </p>
+
+        <h3>Diferencia entre Copyright y Creative Commons</h3>
+        <p>
+          <strong>Copyright:</strong> Derecho de autor tradicional que otorga al
+          creador el control exclusivo sobre su obra. Todos los derechos están
+          reservados y se necesita permiso explícito para cualquier uso.
+        </p>
+        <p>
+          <strong>Creative Commons:</strong> Sistema de licencias flexible que
+          permite a los creadores compartir su trabajo bajo permisos
+          predefinidos. Facilita el uso legal de obras ajenas sin contactar al
+          autor, siempre cumpliendo condiciones como atribución, uso no
+          comercial o compartir igual.
+        </p>
+
+        <h3>Bancos de Recursos Libres</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Banco de Recursos</th>
+              <th>Tipo de Contenido</th>
+              <th>Licencia Predominante</th>
+              <th>Características</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Unsplash</strong></td>
+              <td>Fotografías de alta calidad</td>
+              <td>Licencia Unsplash (similar a CC0)</td>
+              <td>
+                Uso gratuito para fines comerciales y personales, sin atribución
+                obligatoria
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Pixabay</strong></td>
+              <td>Imágenes, ilustraciones, vídeos</td>
+              <td>Licencia Pixabay (CC0 compatible)</td>
+              <td>Contenido libre de derechos, uso comercial permitido</td>
+            </tr>
+            <tr>
+              <td><strong>Pexels</strong></td>
+              <td>Fotos y vídeos</td>
+              <td>Licencia Pexels (libre de derechos)</td>
+              <td>
+                Gratuito para uso personal y comercial, atribución opcional
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="tool-info">
+          <strong>Herramientas utilizadas:</strong> Investigación en sitios
+          oficiales como creativecommons.org, unsplash.com, pixabay.com y
+          pexels.com.
+        </div>
+      </section>
+
+      <!-- 2. FORMATOS DE IMAGEN -->
+      <section id="formatos">
+        <h2>2. Formatos de Imagen para la Web</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Formato</th>
+              <th>Peso Medio</th>
+              <th>Transparencia</th>
+              <th>Escalabilidad</th>
+              <th>Casos de Uso Recomendados</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>JPG / JPEG</strong></td>
+              <td>50-500 KB</td>
+              <td>No soporta</td>
+              <td>No vectorial (pierde calidad al escalar)</td>
+              <td>Fotografías y fondos complejos</td>
+            </tr>
+            <tr>
+              <td><strong>PNG</strong></td>
+              <td>100 KB - 2 MB</td>
+              <td>Sí (canal alpha)</td>
+              <td>No vectorial</td>
+              <td>Logos, iconos y gráficos con transparencia</td>
+            </tr>
+            <tr>
+              <td><strong>SVG</strong></td>
+              <td>2-50 KB</td>
+              <td>Sí (nativo)</td>
+              <td>Vectorial, escalable</td>
+              <td>Logotipos, iconos e ilustraciones simples</td>
+            </tr>
+            <tr>
+              <td><strong>WebP</strong></td>
+              <td>30-300 KB</td>
+              <td>Sí (canal alpha)</td>
+              <td>No vectorial</td>
+              <td>Alternativa moderna a JPG/PNG, fotos optimizadas para web</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="tool-info">
+          <strong>Herramientas utilizadas:</strong> Documentación de MDN Web
+          Docs y comparativas de compatibilidad en caniuse.com.
+        </div>
+      </section>
+
+      <!-- 3. OPTIMIZACIÓN DE IMÁGENES -->
+      <section id="optimizacion">
+        <h2>3. Optimización de Imágenes</h2>
+
+        <p>
+          Se seleccionaron tres imágenes de alta resolución y se optimizaron
+          para web, reduciendo tamaño y peso sin perder calidad visual notable.
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Archivo</th>
+              <th>Dimensiones Originales</th>
+              <th>Dimensiones Finales</th>
+              <th>Peso Original</th>
+              <th>Peso Final</th>
+              <th>Reducción</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>foto1.jpg</td>
+              <td>3890 x 5632 px</td>
+              <td>1920 × 1440 px</td>
+              <td>3.5 MB</td>
+              <td>319 KB</td>
+              <td>91%</td>
+            </tr>
+            <tr>
+              <td>foto2.jpg</td>
+              <td>2583 x 3874 px</td>
+              <td>1920 × 1080 px</td>
+              <td>1.3 MB</td>
+              <td>59 KB</td>
+              <td>95%</td>
+            </tr>
+            <tr>
+              <td>foto3.jpg</td>
+              <td>5464 x 3643 px</td>
+              <td>1600 × 1200 px</td>
+              <td>2.5 MB</td>
+              <td>178 KB</td>
+              <td>93%</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Proceso de Optimización</h3>
+        <ul>
+          <li>
+            <strong>Recorte:</strong> Eliminación de áreas innecesarias y ajuste
+            de encuadre
+          </li>
+          <li>
+            <strong>Redimensionado:</strong> Ajuste a 1920px máximo de ancho
+            para imagen principal y 800px para miniaturas
+          </li>
+          <li>
+            <strong>Calidad de exportación:</strong> JPG al 70-75% para
+            equilibrar peso y calidad
+          </li>
+          <li>
+            <strong>Formato alternativo:</strong> Creación de versiones WebP
+            para navegadores compatibles
+          </li>
+        </ul>
+
+        <div class="tool-info">
+          <strong>Herramientas utilizadas:</strong> GIMP 2.10 y TinyPNG para
+          compresión sin pérdida significativa de calidad.
+        </div>
+      </section>
+
+      <!-- 4. RELACIÓN PESO-TIEMPO DE CARGA -->
+      <section id="tiempos-carga">
+        <h2>4. Relación entre Peso de Imágenes y Tiempos de Carga</h2>
+
+        <h3>Análisis Comparativo</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Escenario</th>
+              <th>Peso Total</th>
+              <th>Tiempo de Carga (3G)</th>
+              <th>Tiempo de Carga (4G)</th>
+              <th>Tiempo de Carga (Fibra)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Imágenes sin optimizar</strong></td>
+              <td>7.3 MB</td>
+              <td>~15-20 seg</td>
+              <td>~4-6 seg</td>
+              <td>~1-2 seg</td>
+            </tr>
+            <tr>
+              <td><strong>Imágenes optimizadas</strong></td>
+              <td>556 KB</td>
+              <td>~2-4 seg</td>
+              <td>~1 seg</td>
+              <td>&lt;0.5 seg</td>
+            </tr>
+            <tr>
+              <td><strong>Mejora obtenida</strong></td>
+              <td>~92% reducción</td>
+              <td>75-80% más rápido</td>
+              <td>80% más rápido</td>
+              <td>60% más rápido</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Conclusiones sobre el Rendimiento</h3>
+        <p>
+          La optimización de imágenes es clave para mejorar el rendimiento web:
+        </p>
+        <ul>
+          <li>
+            <strong>Reducción de peso:</strong> Las imágenes cargan mucho más
+            rápido, especialmente en conexiones móviles.
+          </li>
+          <li>
+            <strong>Experiencia de usuario:</strong> En conexiones lentas, la
+            diferencia puede ser de segundos frente a minutos de espera.
+          </li>
+          <li>
+            <strong>SEO y conversión:</strong> Google valora páginas rápidas;
+            cada segundo adicional puede afectar la conversión hasta en un 7%.
+          </li>
+        </ul>
+
+        <div class="tool-info">
+          <strong>Herramientas utilizadas:</strong> Google PageSpeed Insights,
+          WebPageTest.org y Chrome DevTools.
+        </div>
+      </section>
+
+      <!-- 5. LOGOTIPO SVG -->
+      <section id="logo-svg">
+        <h2>5. Creación del Logotipo SVG</h2>
+
+        <p>
+          El logotipo representa las iniciales del alumno en formato SVG, con
+          las siguientes características:
+        </p>
+        <ul>
+          <li><strong>Vectorial:</strong> Escalable sin perder calidad</li>
+          <li><strong>Peso mínimo:</strong> 1-2 KB</li>
+          <li>
+            <strong>Legible:</strong> Reconocible desde 32px hasta formatos
+            grandes
+          </li>
+          <li>
+            <strong>Colores corporativos:</strong> Uso de la paleta definida en
+            CSS
+          </li>
+        </ul>
+
+        <div class="tool-info">
+          <strong>Herramientas utilizadas:</strong> Código SVG escrito a mano en
+          VS Code, probado en navegador. Opcional: Inkscape o Illustrator.
+        </div>
+      </section>
+
+      <!-- GALERÍA -->
+      <section class="gallery">
+        <h2>Galería de Imágenes Optimizadas</h2>
+        <p>
+          Las imágenes han sido optimizadas aplicando las mejores prácticas:
+          dimensiones ajustadas, compresión eficiente y formatos adecuados.
+        </p>
+
+        <div class="gallery-grid">
+          <figure class="gallery-item">
+            <img src="img/foto1-opt.webp" alt="Descripción de la imagen 1" />
+            <figcaption>Imagen 1 (optimizada - 319 KB)</figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="img/foto2-opt.webp" alt="Descripción de la imagen 2" />
+            <figcaption>Imagen 2 (optimizada - 59 KB)</figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="img/foto3-opt.webp" alt="Descripción de la imagen 3" />
+            <figcaption>Imagen 3 (optimizada - 178 KB)</figcaption>
+          </figure>
+        </div>
+
+        <div class="tool-info">
+          <strong>Implementación técnica:</strong> Galería responsive con CSS
+          Grid, efectos hover y media queries para adaptación a móviles y
+          tablets.
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p><strong>DAW · DIW · RA3 - Práctica 1</strong></p>
+      <p>Banco de recursos e imágenes para la Web</p>
+
+      <div class="license-info">
+        <a
+          href="https://creativecommons.org/licenses/by-sa/4.0/"
+          target="_blank"
+          rel="noopener"
+        >
+          📄 Licencia: CC BY-SA 4.0
+        </a>
+        <p>
+          <strong>Justificación:</strong> Se eligió Creative Commons
+          Attribution-ShareAlike 4.0, que permite usar, modificar y distribuir
+          el contenido siempre que se atribuya la autoría y se comparta bajo la
+          misma licencia, ideal para fines educativos.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

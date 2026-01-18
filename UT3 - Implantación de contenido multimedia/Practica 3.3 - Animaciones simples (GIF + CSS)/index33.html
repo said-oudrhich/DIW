@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Práctica 3.3 - Animaciones simples</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style33.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Práctica 3.3 · Animaciones simples</h1>
+    <p class="subtitle">
+      GIF animado + animaciones básicas con CSS3
+    </p>
+  </header>
+
+  <main class="layout">
+    <!-- Sección GIF -->
+    <section class="card">
+      <h2>1. GIF animado</h2>
+      <p>
+        GIF animado creado a partir de 8 imágenes generadas con IA,
+        cada una con tipografías diferentes y estilos llamativos.
+      </p>
+      <div class="gif-wrapper">
+        <img src="gif/mi-animacion.gif" alt="GIF animado con tipografías IA" class="gif-image" />
+      </div>
+      <div class="gif-info">
+        <h3>Proceso de creación:</h3>
+        <ul>
+          <li><strong>Herramienta:</strong> Adobe Express</li>
+          <li><strong>Imágenes originales:</strong> 8 fotos generadas con IA con tipografías diferentes</li>
+          <li><strong>Tamaño imágenes:</strong> Entre 65 KB y 185 KB cada una (PNG)</li>
+          <li><strong>Composición:</strong> Imágenes centradas con espaciado uniforme</li>
+          <li><strong>Número de fotogramas:</strong> 8</li>
+          <li><strong>Duración por fotograma:</strong> 0.2 segundos</li>
+          <li><strong>Duración total:</strong> 1.6 segundos (8 × 0.2s)</li>
+          <li><strong>Peso final del GIF:</strong> 266.44 KB</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Sección animación hover botón -->
+    <section class="card">
+      <h2>2. Animación hover con CSS</h2>
+      <p>
+        Diseña un botón con una animación suave al pasar el ratón
+        (cambios de color, tamaño, posición, etc.).
+      </p>
+      <button class="btn-animado">
+        Pasa el ratón por aquí
+      </button>
+    </section>
+
+    <!-- Sección animación continua -->
+    <section class="card">
+      <h2>3. Animación continua con @keyframes</h2>
+      <p>
+        Crea una animación continua (por ejemplo un icono que late o una burbuja
+        que se desplaza) usando la propiedad <code>animation</code>.
+      </p>
+      <div class="anim-demo">
+        <div class="burbujita"></div>
+        <div class="icono-pulso">⚡</div>
+        <div class="scroll-indicator">↓</div>
+      </div>
+      <p class="note">
+        Animaciones: burbujita con efecto pulso, icono con rotación y scroll indicator con rebote.
+      </p>
+    </section>
+
+    <!-- Sección comparativa GIF vs CSS -->
+    <section class="card">
+      <h2>4. Comparativa GIF vs CSS</h2>
+      <div class="comparativa">
+        <p><strong>¿Cuándo usar GIF animado?</strong></p>
+        <ul>
+          <li>Animaciones complejas con muchos colores o fotografías</li>
+          <li>Cuando necesitas compatibilidad universal (funciona en cualquier navegador)</li>
+          <li>Para contenido que no requiere interactividad</li>
+          <li>Memes, reacciones o animaciones prediseñadas</li>
+        </ul>
+        
+        <p><strong>¿Cuándo usar animación CSS?</strong></p>
+        <ul>
+          <li>Animaciones de interfaz (botones, transiciones, hover effects)</li>
+          <li>Cuando necesitas control programático (pausar, revertir, modificar)</li>
+          <li>Para mejor rendimiento y menor consumo de recursos</li>
+          <li>Animaciones que deben ser responsivas y escalables</li>
+        </ul>
+        
+        <p><strong>Diferencias clave:</strong></p>
+        <ul>
+          <li><em>Control:</em> CSS permite interactividad y modificación en tiempo real; GIF es estático</li>
+          <li><em>Rendimiento:</em> CSS usa la GPU y es más eficiente; GIF puede ser pesado</li>
+          <li><em>Accesibilidad:</em> CSS permite respetar prefers-reduced-motion; GIF no se puede pausar fácilmente</li>
+          <li><em>Calidad:</em> CSS es vectorial y escalable; GIF tiene paleta limitada (256 colores)</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>DAW · DIW · RA3 - Práctica 3.3 </p>
+  </footer>
+</body>
+</html>

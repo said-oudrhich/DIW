@@ -1,0 +1,129 @@
+/* PRÁCTICA 2 STARTER: mejorar el layout y hacerlo responsive */
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+}
+
+.site-header {
+  padding: 1rem;
+  text-align: center;
+  background: #111;
+  color: #fff;
+}
+
+.layout {
+  padding: 1rem;
+}
+
+.media-card {
+  margin-bottom: 1.5rem;
+}
+
+audio,
+video {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* TODO: añadir estilos con flex o grid, efecto hover, dark/light mode, etc. */
+/* style32.css */
+
+/* --- Layout y Responsive con CSS Grid --- */
+
+.layout {
+  padding: 1rem;
+  /* Usamos CSS Grid para el layout principal */
+  display: grid;
+  /* Por defecto, una columna para dispositivos móviles */
+  grid-template-columns: 1fr;
+  gap: 2rem; /* Espacio entre las tarjetas */
+  max-width: 1200px; /* Ancho máximo para el contenido */
+  margin: 0 auto; /* Centrar el contenedor en pantallas grandes */
+}
+
+/* Media Query para pantallas medianas (tablets y superiores) */
+@media (min-width: 768px) {
+  .layout {
+    /* Dos columnas iguales en pantallas medianas */
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Media Query para pantallas grandes (desktop) */
+@media (min-width: 1024px) {
+  .layout {
+    /* Cuatro columnas para el total de 4 media-cards */
+    grid-template-columns: repeat(4, 1fr);
+  }
+  /* Ajuste para que las tarjetas de audio/video de muestra ocupen 2 columnas */
+  .media-card:nth-child(1), /* Audio de muestra */
+  .media-card:nth-child(2) {
+    /* Video de muestra */
+    grid-column: span 2;
+  }
+}
+
+/* --- Estilos de la Tarjeta Multimedia (Media Card) y Hover --- */
+
+.media-card {
+  margin-bottom: 0; /* Eliminamos el margin-bottom gracias al 'gap' del grid */
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  /* Transición para el efecto hover */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.media-card:hover {
+  /* Efecto de levantamiento y sombra al pasar el ratón */
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos de los elementos <audio> y <video> */
+audio,
+video {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 4px; /* Pequeño radio para el reproductor */
+}
+
+.note {
+  font-size: 0.9em;
+  color: #666;
+  border-left: 3px solid #007bff;
+  padding-left: 10px;
+  margin-top: 1rem;
+}
+
+/* --- Dark Mode (Modo Oscuro) con Preferencias del Usuario --- */
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+  }
+
+  .site-header {
+    background: #333;
+    color: #fff;
+    border-bottom: 2px solid #555;
+  }
+
+  .media-card {
+    background-color: #2a2a2a;
+    border-color: #444;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  .media-card:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+  }
+
+  .note {
+    color: #bbb;
+    border-left-color: #6a9bd8; /* Color azul más claro para contraste */
+  }
+}
